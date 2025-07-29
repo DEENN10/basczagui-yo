@@ -28,7 +28,10 @@ const MenuItem = styled.li`
 function Header() {
   return (
     <Nav>
-      <Logo src="/assets/Letras_logo2.jpg" alt="BASCZAGUI Logo" />
+      <p style={{ fontSize: '1.2rem', fontWeight: 'bold', letterSpacing: '1px' }}>
+  BASCZAGUI, S.A de C.V.
+</p>
+
       <Menu>
         <MenuItem>Inicio</MenuItem>
         <MenuItem>Sobre Nosotros</MenuItem>

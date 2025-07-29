@@ -52,3 +52,4 @@ function Certificaciones() {
 }
 
 export default Certificaciones;
+
