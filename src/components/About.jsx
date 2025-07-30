@@ -1,28 +1,16 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
-
-// Animación: movimiento horizontal lento del fondo degradado
-const gradientShift = keyframes`
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-`;
+import styled from 'styled-components';
 
 const AboutSection = styled.section`
   padding: 4rem 2rem;
   text-align: center;
   background: linear-gradient(90deg, #0f172a, #1e293b, #475569, #94a3b8);
-  background-size: 150% 150%;
-  animation: ${gradientShift} 20s ease-in-out infinite;
 `;
 
 const Title = styled.h2`
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #f8fafc;
+  color: #f8fafb;
 `;
 
 const Text = styled.p`

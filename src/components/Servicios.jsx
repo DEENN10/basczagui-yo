@@ -50,7 +50,7 @@ const Description = styled.p`
 
 function Servicios() {
   return (
-    <ServiciosSection>
+    <ServiciosSection id ="servicios">
       <Title>Servicios</Title>
       <CardsContainer>
         <Card>

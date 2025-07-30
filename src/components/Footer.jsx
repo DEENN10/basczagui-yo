@@ -11,7 +11,7 @@ const FooterContainer = styled.footer`
 
 function Footer() {
   return (
-    <FooterContainer>
+    <FooterContainer id ="footer"> 
       © {new Date().getFullYear()} BASCZAGUI. Todos los derechos reservados.
     </FooterContainer>
   );

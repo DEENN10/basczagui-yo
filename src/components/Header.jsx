@@ -10,10 +10,6 @@ const Nav = styled.nav`
   padding: 1rem 2rem;
 `;
 
-const Logo = styled.img`
-  height: 50px;
-`;
-
 const Menu = styled.ul`
   display: flex;
   gap: 1.5rem;
@@ -23,20 +19,30 @@ const Menu = styled.ul`
 const MenuItem = styled.li`
   cursor: pointer;
   font-weight: bold;
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 function Header() {
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <Nav>
       <p style={{ fontSize: '1.2rem', fontWeight: 'bold', letterSpacing: '1px' }}>
-  BASCZAGUI, S.A de C.V.
-</p>
+        BASCZAGUI, S.A de C.V.
+      </p>
 
       <Menu>
-        <MenuItem>Inicio</MenuItem>
-        <MenuItem>Sobre Nosotros</MenuItem>
-        <MenuItem>Servicios</MenuItem>
-        <MenuItem>Contacto</MenuItem>
+        <MenuItem onClick={() => scrollToSection('inicio')}>Inicio</MenuItem>
+        <MenuItem onClick={() => scrollToSection('servicios')}>Servicio</MenuItem>
+        <MenuItem onClick={() => scrollToSection('certificaciones')}>Certificaciones</MenuItem>
+        <MenuItem onClick={() => scrollToSection('contact')}>Contacto</MenuItem>
       </Menu>
     </Nav>
   );
